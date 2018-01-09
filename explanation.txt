@@ -1,0 +1,56 @@
+Features Used:
+
+I got these features by manually going through the both writings.
+
+Stop words:
+    Removed all the stop words before calculating features. 
+    Basic for any text processing
+
+On going through the two texts, I found that Shakespeare uses more words in each line.
+
+length of tokens
+    Used the tokenizer to tokenize the string, and used the number of tokens as a feature
+
+POS
+    Tried the POS tags such that, number of nouns and the way how they occur.
+    Also tried working with NGrams on POS but, the accuracy was getting low
+
+    Also used the last word POS as a feature.
+
+length of the lines
+    Since shakespeare uses more words, the length of the line is more.
+
+Length of words
+    On going through the two texts, I found that Shakespeare uses bigger words in each line.
+    Shakespeare uses lengthy words when compared to Bronte
+    Used average length of words instead of length of each word to improve accuracy
+
+NGrams
+    Used Bigrams and Trigrams which improved the efficiency a little
+
+Tried:
+
+Spaces
+    Number of spaces is more for Shakespeare as he uses more words (No change on the accuracy though)
+
+Single Quotes
+    On looking at the training data, there were single qoutes more in Shakespeare's when compared to Bronte's text
+
+Exclamation
+    Shakespeare used more exclamations when compared with Bronte
+
+Words ending with 'st'
+    Shakespeare uses more words that end with 'st'. Example Shouldst, Thoust, Couldst.
+    But, it did not improve accuracy instead decreased it.
+
+syllables
+    Calculated the number of syllables in a line which I thought will help classify
+    As both are poetic writers, I thought number of syllables might help
+
+Adjectives
+    Since both of them are great authors, I thought that they will be using more adjectives.
+    Used avg adjectives per line to compare the relevancy.
+
+heml@fb.com
+ckuykendoll@fb.com
+
